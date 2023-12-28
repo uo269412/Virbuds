@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.fragments.InfoFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-55dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/universidadInfoFragment"
+                android:layout_width="254dp"
+                android:layout_height="82dp"
+                android:text="@string/universidadInfoFragment"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cursoInfoFragment"
+                app:layout_constraintTop_toBottomOf="@+id/cursoInfoFragment"
+                app:layout_constraintVertical_bias="0.48" />
+
+            <TextView
+                android:id="@+id/carreraInfoFragment"
+                android:layout_width="242dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="60dp"
+                android:text="@string/carreraInfoFragment"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelEstudios"
+                app:layout_constraintVertical_bias="0.145" />
+
+            <TextView
+                android:id="@+id/nombreInfoFragment"
+                android:layout_width="177dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/nombreInfoFragment"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fotoPerfilInfoFragment" />
+
+            <TextView
+                android:id="@+id/biografiaInfoFragment"
+                android:layout_width="235dp"
+                android:layout_height="76dp"
+                android:text="@string/biografiaInfoFragment"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/carreraInfoFragment"
+                app:layout_constraintTop_toBottomOf="@+id/nombreInfoFragment"
+                app:layout_constraintVertical_bias="0.035" />
+
+            <TextView
+                android:id="@+id/cursoInfoFragment"
+                android:layout_width="108dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="60dp"
+                android:text="@string/cursoInfoFragment"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carreraInfoFragment"
+                app:layout_constraintVertical_bias="0.155" />
+
+            <ImageView
+                android:id="@+id/fotoPerfilInfoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/actor_sin_imagen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelEstudios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/labelEstudios"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/carreraInfoFragment"
+                app:layout_constraintTop_toBottomOf="@+id/biografiaInfoFragment"
+                app:layout_constraintVertical_bias="0.115"
+                tools:text="@string/labelEstudios" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

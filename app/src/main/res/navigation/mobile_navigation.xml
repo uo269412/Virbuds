@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_profile">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="es.uniovi.eii.myapplication.ui.profile.HomeFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_find_profiles"
+        android:name="es.uniovi.eii.myapplication.ui.companeros.CardFragment"
+        android:label="@string/title_compañeros"
+        tools:layout="@layout/fragment_card" />
+
+    <fragment
+        android:id="@+id/navigation_group_chat"
+        android:name="es.uniovi.eii.myapplication.ui.groupchat.NotificationsFragment"
+        android:label="@string/title_goup_chat"
+        tools:layout="@layout/fragment_group_chat" />
+
+    <fragment
+        android:id="@+id/navigation_private_chat"
+        android:name="es.uniovi.eii.myapplication.ui.privatechat.PrivateChatFragment"
+        android:label="@string/title_private_chat"
+        tools:layout="@layout/fragment_private_chat" />
+</navigation>

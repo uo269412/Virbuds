@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Profile, find profiles, chat grupal, message -->
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person_24px"
+        android:title="@string/title_profile" />
+
+    <item
+        android:id="@+id/navigation_find_profiles"
+        android:icon="@drawable/ic_search_24px"
+        android:title="@string/title_compañeros" />
+
+    <item
+        android:id="@+id/navigation_group_chat"
+        android:icon="@drawable/ic_connect_without_contact_24px"
+        android:title="@string/title_goup_chat" />
+
+    <item
+        android:id="@+id/navigation_private_chat"
+        android:icon="@drawable/ic_local_post_office_24px"
+        android:title="@string/title_private_chat" />
+
+</menu>
